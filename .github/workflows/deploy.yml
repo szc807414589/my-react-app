@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.TENCENT_CLOUD_SSH_KEY }}  # 从 Secrets 中读取 SSH 私钥
   # SSH 私钥
           script: |
-            cd /scripts/deploy.sh
+            cd /var/www/my-react-app
             git pull origin master
             npm install
             npm run build
